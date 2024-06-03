@@ -7,5 +7,30 @@ const sizes = {
   ratio: 9/16
 };
 
+class GameScene extends Phaser.Scene {
+  constructor( ) {
+      super("scene-game")
+  }
 
-const game = new Phaser.Game(sizes)
+  preload( ) {
+
+  }
+
+  create ( ) {
+
+  }
+
+  update ( ) {
+    
+  }
+}
+
+const config = {
+  type: Phaser.WEBGL,
+  width: sizes.width,
+  height: sizes.height,
+  canvas: gameCanvas
+}
+
+
+const game = new Phaser.Game(config)
